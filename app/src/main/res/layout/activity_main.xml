@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/holo_blue_bright"
+    android:angle="180">
+
+  <!--Image-->
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="199dp"
+      android:src="@drawable/istockphoto_1279315792_170667a" />
+
+<!--title-->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Time Of Day"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp" />
+
+
+<!--Edit Text Time-->
+    <EditText
+        android:id="@+id/edittxttime"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Enter time of day"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <!--Suggest Button-->
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/white"
+        android:text="Click to Suggest"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+<!--Text Results-->
+  <TextView
+      android:id="@+id/txtResults"
+      android:layout_width="match_parent"
+      android:layout_height="33dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp"
+      android:text="Suggestion will be displayed here"
+      android:textAlignment="center"
+      android:textColor="@color/purple_700"
+      android:textSize="20dp"
+      android:textStyle="bold" />
+
+    <!--Reset button-->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</LinearLayout>
